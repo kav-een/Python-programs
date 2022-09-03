@@ -1,0 +1,25 @@
+#code using *args
+
+def add(*result):
+    total = 0
+    for res in result:
+        total += res
+    return total
+
+print("Using args")
+print(add(2, 3))
+print(add(2, 3, 5))
+
+
+#code using **kwargs
+
+def fruits(**fr):
+    total = 0
+    for value in fr.values():
+        total += value
+    return total
+
+print()
+print("Using kwargs")
+print(fruits(banana=5, mango=7, apple=8))
+print(fruits(banana=5, mango=7, apple=8, oranges=10))
